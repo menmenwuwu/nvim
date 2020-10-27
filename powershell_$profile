@@ -1,0 +1,7 @@
+if (!(Test-Path -Path $PROFILE)) {New-Item -Type File -Path $PROFILE -Force}
+notepad $PROFILE
+$init.vim='C:\Users\MI\AppData\Local\nvim\init.vim'
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme robbyrussell
